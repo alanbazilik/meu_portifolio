@@ -1,0 +1,187 @@
+
+div.cx1{
+  background-color: #0891b2;
+  min-width: 205vh;
+  min-height: 190vh;
+  border-radius: 10px;
+  margin-top: 20px;
+
+}
+.App{
+  background-color: #20262E;
+  min-height: 202vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #20262E;
+  border-radius: 10px;
+  
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: #93BFCF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #EEE9DA;
+}
+div.cards{
+ 	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 290px;
+	width: 700px;
+  
+}
+img.minhafoto{
+  position: absolute;
+  left: 320px;
+  top: 250px;
+  width: 200px;
+  border-radius: 20px;
+}
+img.minhafoto1{
+  position: absolute;
+  left: 320px;
+  top: 430px;
+  width: 200px;
+  border-radius: 20px;
+}
+h1.emails{
+  position: absolute;
+  top: 290px;
+  left: 550px;
+  color: #000;
+  font-size: 18px;
+}
+Icon.EmailSharp{
+  color: #000;
+}
+h1.nome{
+  position: absolute;
+  top: 240px;
+  left: 550px;
+  color: #000;
+  font-size: 20px;
+}
+h1.telefone{
+color: #000; 
+font-size: 18px;
+margin-top: 130px; 
+}
+div.sobre{
+  box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 3em auto;
+	height: 300px;
+	width: 750px;
+}
+h1.sobre1{
+
+}
+div.inst{
+  color: #000;
+ position: absolute;
+ top: 365px;
+ left: 575px;
+ font-size: 20px;
+}
+a.instragam{
+  color: rgb(255, 123, 0);
+}
+h1.sobre1{
+  color: #000;
+  font-size: 20px;
+}
+
+.container  {
+  position: absolute;
+  left: 50%;
+  top: 850px;
+  transform: translate(-50%, -50%);
+	height: 300px;
+	width: 750px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: 'Merriweather', serif;
+}
+
+.flap {
+  height: 300px;
+	width: 750px;
+}
+
+.flap::before {
+  position: absolute;
+  top: 700px;
+  left: 275px;
+  content: "";
+  height: 300px;
+	width: 550px;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+
+.flap::after {
+  position: absolute;
+  top: 700px;
+  content: "";
+  height: 300px;
+	width: 550px;
+  right: 275px;
+  background: url("https://pbs.twimg.com/profile_images/1347260174176710658/2GfSZ1i__400x400.jpg") white;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+  border-radius: 5px;
+}
+
+.container:hover .flap::after {
+  transform: translatex(300px);
+}
+
+.container:hover .flap::before{
+  transform: translatex(-300px);
+}
